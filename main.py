@@ -13,7 +13,7 @@ app.mount("/images", StaticFiles(directory="images"), name="images")
 
 origins = [
     "http://localhost:3000",
-    "https://myfrontenddomain.com"
+    "https://sasta-frontend.vercel.app"
 ]
 
 

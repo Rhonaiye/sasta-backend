@@ -54,4 +54,4 @@ uvicorn==0.32.0
 uvloop==0.21.0
 watchfiles==0.24.0
 websockets==13.1
-wheel @ file:///usr/local/Cellar/python%403.12/3.12.5/libexec/wheel-0.44.0-py3-none-any.whl#sha256=8d8a590e50bda8422000110e90bc730ebfcd8363d2de80793ac819b7f252e97d
+
