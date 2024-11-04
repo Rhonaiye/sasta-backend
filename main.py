@@ -3,13 +3,14 @@ from fastapi.staticfiles import StaticFiles
 from database import create_engine, Base, engine
 from fastapi.middleware.cors import CORSMiddleware
 import models
+import os
 from router import products, users, payment
 
 
 app = FastAPI()
 
 models.Base.metadata.create_all(bind=engine)
-app.mount("/images", StaticFiles(directory="images"), name="images")
+app.mount("/images/", StaticFiles(directory="images"), name="images")
 
 origins = [
     "http://localhost:3000",
