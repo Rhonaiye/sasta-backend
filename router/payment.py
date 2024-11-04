@@ -89,7 +89,7 @@ async def checkout(db: db_dependency,current_user: User = Depends(get_current_us
             "email": current_user.email,
             "amount": int(total_price * 100),  # Convert to kobo/cents
             "reference": reference,
-            "callback_url": "https://sasta-frontend.vercel.app/",  # Add your frontend callback URL
+            "callback_url": "https://www.sastaclothing.com.ng/",  # Add your frontend callback URL
             "metadata": {
                 "order_id": order.id,
                 "user_id": current_user.id
