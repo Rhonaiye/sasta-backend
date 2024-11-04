@@ -42,7 +42,7 @@ async def get_all_products(db:db_dependency):
     if not products:  
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No products found")
 
-    base_url = 'http://localhost:4000'  # Ensure this matches your actual backend URL
+    base_url = 'https://sasta-backend-1.onrender.com'  # Ensure this matches your actual backend URL
 
     for product in products:
         product.image_url = f"{base_url}/{product.image_url}"  # Prepend the base URL
