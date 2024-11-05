@@ -14,7 +14,7 @@ app.mount("/images/", StaticFiles(directory="images"), name="images")
 
 origins = [
     "http://localhost:3000",
-    "https://www.sastaclothing.com.ng/"
+    "https://www.sastaclothing.com.ng"
 ]
 
 
